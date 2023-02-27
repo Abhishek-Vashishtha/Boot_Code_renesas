@@ -1,0 +1,32 @@
+-Input=DefaultBuild\Flash_Protocol.obj
+-Input=DefaultBuild\cstart.obj
+-LIBrary="Self Programming Library\fsl.lib"
+-SECURITY_ID=00000000000000000000
+-DEVICE=C:\Program Files\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10MMG.DVF
+-DEBug
+-NOCOmpress
+-NOOPtimize
+-OUtput=DefaultBuild\Flash_Boot_Code_Loader_R5F10MMGD.abs
+-LIBrary=C:\Program Files\Renesas Electronics\CS+\CC\CC-RL\V1.08.00\lib\rl78em4s.lib
+-LIBrary=C:\Program Files\Renesas Electronics\CS+\CC\CC-RL\V1.08.00\lib\malloc_n.lib
+-LIBrary=C:\Program Files\Renesas Electronics\CS+\CC\CC-RL\V1.08.00\lib\rl78em4r.lib
+-OCDBG=84
+-DEBUG_MONITOR=1FE00-1FFFF
+-USER_OPT_BYTE=7CFFA3
+-LISt=DefaultBuild\Flash_Boot_Code_Loader_R5F10MMGD.map
+-SHow=SYmbol,Reference,Xreference,Total_size,VECTOR,STRUCT
+-AUTO_SECTION_LAYOUT
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-Message
+-MSg_unused
+-Total_size
+-NOLOgo
+-end
+-Input=DefaultBuild\Flash_Boot_Code_Loader_R5F10MMGD.abs
+-DEVICE=C:\Program Files\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10MMG.DVF
+-OUtput=DefaultBuild\Flash_Boot_Code_Loader_R5F10MMGD.bin
+-FOrm=Binary
+-Message
+-exit
+

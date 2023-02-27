@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MicomToolCommonProjectFile Version="1.00">
+  <CreatorType Name="CubeSuite+" Version="V4.00.00  [15 Mar 2016]" />
+  <Placeholders>
+    <PlaceholderPrefix>%</PlaceholderPrefix>
+    <PlaceholderPostfix>%</PlaceholderPostfix>
+  </Placeholders>
+  <Project Name="Flash_Boot_Code_Loader" Type="Application">
+    <Files>
+      <Category Name="Source Files">
+        <Path>Source files\Flash_Protocol.c</Path>
+        <Path>Source files\Flash_Protocol.h</Path>
+        <Path>Source files\iodefine.h</Path>
+        <Path>Source files\r_cg_serial.h</Path>
+        <Path>Source files\cstart.asm</Path>
+        <Path>Source files\ClockSetting.h</Path>
+        <Path>Source files\lcd.h</Path>
+      </Category>
+      <Category Name="Flash Library">
+        <Path>Self Programming Library\fsl.h</Path>
+        <Path>Self Programming Library\fsl.lib</Path>
+        <Path>Self Programming Library\fsl_types.h</Path>
+      </Category>
+      <Category Name="Linker Files">
+        <Path>Linker Files\bootloader.dr</Path>
+      </Category>
+    </Files>
+    <Device Series="RL78">R5F10MMG</Device>
+    <BuildOptions Name="CC-RL" Version="V1.03.00">
+      <BuildMode Name="DefaultBuild" Active="True">
+        <LinkOrder>
+          <Path>DefaultBuild\Flash_Protocol.obj</Path>
+          <Path>DefaultBuild\cstart.obj</Path>
+          <Path>Self Programming Library\fsl.lib</Path>
+        </LinkOrder>
+        <CommonOptions>
+          <IncludePathForC>Self Programming Library</IncludePathForC>
+          <IncludePathForC>Source files</IncludePathForC>
+        </CommonOptions>
+        <GeneralOptions>
+          <SimultaneouslyBuild>True</SimultaneouslyBuild>
+        </GeneralOptions>
+        <CompileOptions>
+          <Option>-cpu=S3</Option>
+          <Option>-obj_path=%BuildModeName%</Option>
+          <Option>-dev=%MicomToolPath%\Device\RL78\Devicefile\DR5F10MMG.DVF</Option>
+          <Option>-c</Option>
+          <Option>-g</Option>
+          <Option>-I "Self Programming Library"</Option>
+          <Option>-I "Source files"</Option>
+        </CompileOptions>
+        <AssembleOptions>
+          <Option>-cpu=S3</Option>
+          <Option>-obj_path=%BuildModeName%</Option>
+          <Option>-dev=%MicomToolPath%\Device\RL78\Devicefile\DR5F10MMG.DVF</Option>
+          <Option>-c</Option>
+          <Option>-g</Option>
+        </AssembleOptions>
+        <LinkOptions>
+          <Option>-SECURITY_ID=00000000000000000000</Option>
+          <Option>-DEVICE=%MicomToolPath%\Device\RL78\Devicefile\DR5F10MMG.DVF</Option>
+          <Option>-DEBug</Option>
+          <Option>-NOCOmpress</Option>
+          <Option>-NOOPtimize</Option>
+          <Option>-OUtput=%BuildModeName%\%ProjectName%.abs</Option>
+          <Option>-LIBrary=%MicomToolPath%\CC-RL\V1.03.00\lib\rl78em4s.lib</Option>
+          <Option>-LIBrary=%MicomToolPath%\CC-RL\V1.03.00\lib\malloc_n.lib</Option>
+          <Option>-LIBrary=%MicomToolPath%\CC-RL\V1.03.00\lib\rl78em4r.lib</Option>
+          <Option>-OCDBG=84</Option>
+          <Option>-DEBUG_MONITOR=1FE00-1FFFF</Option>
+          <Option>-USER_OPT_BYTE=7CFFA3</Option>
+          <Option>-LISt=%BuildModeName%\%ProjectName%.map</Option>
+          <Option>-SHow=SYmbol,Reference,Xreference,Total_size,VECTOR,STRUCT</Option>
+          <Option>-AUTO_SECTION_LAYOUT</Option>
+          <Option>-ROm=.data=.dataR</Option>
+          <Option>-ROm=.sdata=.sdataR</Option>
+          <Option>-Message</Option>
+          <Option>-MSg_unused</Option>
+          <Option>-Total_size</Option>
+          <Option>-NOLOgo</Option>
+          <Option>-END</Option>
+          <Option>-Input=%BuildModeName%\%ProjectName%.abs</Option>
+          <Option>-OUtput=%BuildModeName%\%ProjectName%.hex</Option>
+          <Option>-FOrm=Hexadecimal</Option>
+          <Option>-Message</Option>
+          <Option>-EXIt</Option>
+        </LinkOptions>
+        <IOHeaderGenerationOptions>
+          <Option>-df=%MicomToolPath%\Device\RL78\Devicefile\DR5F10MMG.DVF</Option>
+          <Option>-o=%ProjectDir%\iodefine.h</Option>
+          <Option>-f</Option>
+          <UpdateIOMode>None</UpdateIOMode>
+        </IOHeaderGenerationOptions>
+      </BuildMode>
+    </BuildOptions>
+  </Project>
+</MicomToolCommonProjectFile>

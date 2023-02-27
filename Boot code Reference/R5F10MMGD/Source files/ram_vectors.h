@@ -1,0 +1,47 @@
+
+
+extern  void (*RAM_INTWDTI_ISR)();
+extern  void (*RAM_INTLVI_ISR)();
+extern  void (*RAM_INTP0_ISR)();
+extern  void (*RAM_INTP1_ISR)();
+extern  void (*RAM_INTP2_ISR)();
+extern  void (*RAM_INTP3_ISR)();
+extern  void (*RAM_INTP4_ISR)();
+extern  void (*RAM_INTP5_ISR)();
+extern  void (*RAM_INTST2_ISR)();
+extern  void (*RAM_INTSR2_ISR)();
+extern  void (*RAM_INTSRE2_ISR)();
+extern  void (*RAM_INTST0_ISR)();
+extern  void (*RAM_INTSR0_ISR)();
+extern  void (*RAM_INTSRE0_ISR)();
+extern  void (*RAM_INTST1_ISR)();
+extern  void (*RAM_INTSR1_ISR)();
+extern  void (*RAM_INTSRE1_ISR)();
+extern  void (*RAM_INTIICA0_ISR)();
+extern  void (*RAM_INTTM00_ISR)();
+extern  void (*RAM_INTTM01_ISR)();
+extern  void (*RAM_INTTM02_ISR)();
+extern  void (*RAM_INTTM03_ISR)();
+extern  void (*RAM_INTAD_ISR)();
+extern  void (*RAM_INTRTC_ISR)();
+extern  void (*RAM_INTKR_ISR)();
+extern  void (*RAM_INTST3_ISR)();
+extern  void (*RAM_INTSR3_ISR)();
+extern  void (*RAM_INTTRJ0_ISR)();
+extern  void (*RAM_INTTM11_ISR)();
+extern  void (*RAM_INTTM12_ISR)();
+extern  void (*RAM_INTTM13_ISR)();
+extern  void (*RAM_INTP6_ISR)();
+extern  void (*RAM_INTP7_ISR)();
+extern  void (*RAM_INTP8_ISR)();
+extern  void (*RAM_INTP9_ISR)();
+extern  void (*RAM_INTP10_ISR)();
+extern  void (*RAM_INTP11_ISR)();
+extern  void (*RAM_INTTRD0_ISR)();
+extern  void (*RAM_INTTRD1_ISR)();
+extern  void (*RAM_INTTRG_ISR)();
+extern  void (*RAM_INTIICA1_ISR)();
+extern  void (*RAM_INTFL_ISR)();
+extern  void (*RAM_INTDSAD_ISR)();
+extern  void (*RAM_INTIT_ISR)();
+

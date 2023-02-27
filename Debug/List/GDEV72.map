@@ -1,0 +1,885 @@
+###############################################################################
+#
+# IAR ELF Linker V4.21.1.2409/W32 for RL78                27/Feb/2023  16:59:22
+# Copyright 2011-2021 IAR Systems AB.
+#
+#    Output file  =
+#        D:\Software code\Projects Software\Projects new\0. Non AMI\SUGAM
+#        Based\0. GDEV72 - BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Exe\GDEV72.out.tmp
+#    Map file     =
+#        D:\Software code\Projects Software\Projects new\0. Non AMI\SUGAM
+#        Based\0. GDEV72 - BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\List\GDEV72.map
+#    Command line =
+#        -f C:\Users\17054\AppData\Local\Temp\EWDF1A.tmp ("D:\Software
+#        code\Projects Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 - BootCode\Debug\Obj\clock.o"
+#        "D:\Software code\Projects Software\Projects new\0. Non AMI\SUGAM
+#        Based\0. GDEV72 - BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Obj\common_function.o" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Obj\Flash_Protocol.o" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\source_code\library_files\fsl.a" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 - BootCode\Debug\Obj\lcd.o"
+#        "D:\Software code\Projects Software\Projects new\0. Non AMI\SUGAM
+#        Based\0. GDEV72 - BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Obj\main.o" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 - BootCode\Debug\Obj\pcb.o"
+#        "D:\Software code\Projects Software\Projects new\0. Non AMI\SUGAM
+#        Based\0. GDEV72 - BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Obj\r_cg_cgc.o" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Obj\r_cg_cgc_user.o" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Obj\r_cg_lcd.o" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Obj\r_cg_lvd.o" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Obj\r_cg_lvd_user.o" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Obj\r_cg_sau.o" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Obj\r_cg_sau_user.o" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Obj\r_cg_systeminit.o" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Obj\r_cg_wdt.o" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Obj\r_cg_wdt_user.o" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 - BootCode\Debug\Obj\sleep.o"
+#        "D:\Software code\Projects Software\Projects new\0. Non AMI\SUGAM
+#        Based\0. GDEV72 - BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Obj\system.o" "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 - BootCode\Debug\Obj\wdt.o"
+#        --no_out_extension -o "D:\Software code\Projects Software\Projects
+#        new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\Exe\GDEV72.out.tmp" --config_def __RESERVE_OCD_ROM=1
+#        --config_def __RESERVE_OCD_TRACE_RAM=0 --config_def
+#        __RESERVE_HOTPLUGIN_RAM=0 --map "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\Debug\List\GDEV72.map" --config "D:\Software code\Projects
+#        Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 -
+#        BootCode-20210104T103109Z-001\0. GDEV72 -
+#        BootCode\source_code\misc_files\lnkr5f10npj.icf" --config_def
+#        _STACK_SIZE=1240 --config_def _NEAR_HEAP_SIZE=256 --config_def
+#        _FAR_HEAP_SIZE=4096 --config_def _HUGE_HEAP_SIZE=0 --config_def
+#        _NEAR_CONST_LOCATION_START=0x1000 --config_def
+#        _NEAR_CONST_LOCATION_SIZE=0 --define_symbol _NEAR_CONST_LOCATION=2
+#        --vfe --entry __iar_program_start --debug_lib --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+__SystemLibrary            = DLib
+__calling_convention       = v2
+__code_model               = near
+__core                     = s3
+__data_model               = near
+__dlib_file_descriptor     = 0
+__dlib_full_locale_support = 0
+__dlib_version             = 6
+__double_size              = 32
+__far_rt_calls             = false
+__rt_version               = 2
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .reset };
+"A1":  place at address 0x4 { ro section .intvec };
+define block OPT_BYTE
+   with size = 4 { R_OPT_BYTE, ro section .option_byte, ro section OPTBYTE };
+"A2":  place at address 0xc0 { block OPT_BYTE };
+define block SECUR_ID
+   with size = 10 { R_SECUR_ID, ro section .security_id, ro section SECUID };
+"A3":  place at address 0xc4 { block SECUR_ID };
+"FSL_FCD":
+       place in [from 0xd8 to 0x1000] { ro section FSL_FCD };
+"FSL_BCD":
+       place in [from 0xd8 to 0x1000] { ro section FSL_BCD };
+"FSL_BECD":
+       place in [from 0xd8 to 0x1000] { ro section FSL_BECD };
+"FSL_RCD":
+       place in [from 0xd8 to 0x1000] { ro section FSL_RCD };
+"ROMNEAR":
+       place in [from 0xd8 to 0xffff] { R_TEXT, ro section .text };
+define block INIT_ARRAY
+   with fixed order, alignment = 2 {
+      ro section .preinit_array, ro section .init_array };
+define block INIT_ARRAY_TLS
+   with fixed order, alignment = 2 {
+      ro section .preinit_array_tls, ro section .init_array_tls };
+"ROMFAR":
+       place in [from 0xd8 to 0xffff] |
+                [from 0x1'0000 to 0x1'ffff repeat 2] |
+                [from 0x3'0000 to 0x3'fdff] {
+          block INIT_ARRAY, block INIT_ARRAY_TLS, R_TEXTF_UNIT64KP,
+          ro section .textf_unit64kp, ro section .constf, ro section .switchf,
+          ro };
+"ROMHUGE":
+       place in [from 0xd8 to 0x3'fdff] {
+          ro section .consth, R_TEXTF, ro section .textf };
+define block NEAR_HEAP with size = 256, alignment = 2 { };
+define block CSTACK with size = 1'240, alignment = 2 { rw section CSTACK };
+"RAMNEAR":
+       place in [from 0xf'bf00 to 0xf'fe1f] {
+          block NEAR_HEAP, block CSTACK, zi section .iar.dynexit, R_DATA,
+          rw section .data, R_BSS, rw section .bss*, rw };
+"SADDRMEM":
+       place in [from 0xf'fe20 to 0xf'fedf] {
+          rw section .sdata, R_SDATA, rw section .sbss*, R_SBSS,
+          rw section .wrkseg };
+
+No sections matched the following patterns:
+
+  R_BSS                          in "RAMNEAR"
+  R_BSSF                         in "RAMFAR"
+  R_CALLT0                       in "CALLT"
+  R_DATA                         in "RAMNEAR"
+  R_DATAF                        in "RAMFAR"
+  R_OPT_BYTE                     in block OPT_BYTE
+  R_SBSS                         in "SADDRMEM"
+  R_SDATA                        in "SADDRMEM"
+  R_SECUR_ID                     in block SECUR_ID
+  R_TEXT                         in "ROMNEAR"
+  R_TEXTF                        in "ROMHUGE"
+  ro section .callt0             in "CALLT"
+  ro section .constf             in "ROMFAR"
+  ro section .consth             in "ROMHUGE"
+  ro section .init_array         in block INIT_ARRAY
+  ro section .init_array_tls     in block INIT_ARRAY_TLS
+  ro section .option_byte        in block OPT_BYTE
+  ro section .preinit_array      in block INIT_ARRAY
+  ro section .preinit_array_tls  in block INIT_ARRAY_TLS
+  ro section .security_id        in block SECUR_ID
+  ro section .switchf            in "ROMFAR"
+  ro section .textf_unit64kp     in "ROMFAR"
+  ro section FSL_FECD            in "FSL_FECD"
+  rw section .bss_unit64kp       in "RAMFAR"
+  rw section .bssf*              in "RAMFAR"
+  rw section .data               in "RAMNEAR"
+  rw section .data_unit64kp      in "RAMFAR"
+  rw section .dataf              in "RAMFAR"
+  rw section .hbss*              in "RAMHUGE"
+  rw section .hdata              in "RAMHUGE"
+  rw section .sbss*              in "SADDRMEM"
+  rw section .sdata              in "SADDRMEM"
+  zi section .iar.dynexit        in "RAMNEAR"
+
+
+  Section          Kind      Address   Size  Object
+  -------          ----      -------   ----  ------
+"A0":                                   0x2
+  .reset           const         0x0    0x2  interrupt_vector.o [3]
+                               - 0x2    0x2
+
+"A1":                                  0x7c
+  .intvec          const         0x4   0x7c  interrupt_vector.o [3]
+                              - 0x80   0x7c
+
+"A2":                                   0x4
+  OPT_BYTE                      0xc0    0x4  <Block>
+    OPTBYTE        const        0xc0    0x1  system.o [1]
+    OPTBYTE        const        0xc1    0x1  system.o [1]
+    OPTBYTE        const        0xc2    0x1  system.o [1]
+    OPTBYTE        const        0xc3    0x1  system.o [1]
+                              - 0xc4    0x4
+
+"A3":                                   0xa
+  SECUR_ID                      0xc4    0xa  <Block>
+    SECUID         const        0xc4    0xa  system.o [1]
+                              - 0xce    0xa
+
+"FSL_FCD":                             0xb2
+  FSL_FCD          ro code      0xd8   0x67  fsl_f_init [4]
+  FSL_FCD          ro code     0x140   0x29  fsl_f_pfunc [4]
+  FSL_FCD          ro code     0x16a   0x19  fsl_f_pefunc [4]
+  FSL_FCD          ro code     0x184    0x5  fsl_f_open [4]
+                             - 0x189   0xb1
+
+"FSL_BCD":                            0x100
+  FSL_BCD          ro code     0x18a  0x100  fsl_b_common [4]
+                             - 0x28a  0x100
+
+"FSL_BECD":                            0x80
+  FSL_BECD         ro code     0x28a   0x80  fsl_be_common [4]
+                             - 0x30a   0x80
+
+"FSL_RCD":                             0x5f
+  FSL_RCD          ro code     0x30a   0x28  fsl_r_check_flow [4]
+  FSL_RCD          ro code     0x332   0x1f  fsl_r_std_cmd [4]
+  FSL_RCD          ro code     0x352    0xd  fsl_r_br_becd [4]
+  FSL_RCD          ro code     0x360    0x8  fsl_r_ss_ibf [4]
+  FSL_RCD          ro code     0x368    0x1  fsl_r_reset [4]
+                             - 0x369   0x5f
+
+"ROMNEAR":                            0xba5
+  .text            ro code     0x369  0x50a  Flash_Protocol.o [1]
+  .text            ro code     0x873   0xe6  common_function.o [1]
+  .text            ro code     0x959   0xca  lcd.o [1]
+  .text            ro code     0xa23   0xc5  r_cg_lcd.o [1]
+  .text            ro code     0xae8   0xb0  r_cg_cgc.o [1]
+  .text            ro code     0xb98   0xac  r_cg_sau_user.o [1]
+  .text            ro code     0xc44   0xa9  main.o [1]
+  .text            ro code     0xced   0x90  r_cg_lvd_user.o [1]
+  .text            ro code     0xd7d   0x6e  system.o [1]
+  .text            ro code     0xdeb   0x4a  pcb.o [1]
+  .text            ro code     0xe35   0x3a  cstartup.o [3]
+  .text            ro code     0xe6f   0x33  r_cg_lvd.o [1]
+  .text            ro code     0xea2   0x13  default_handler.o [3]
+  .text            ro code     0xeb5   0x11  r_cg_wdt.o [1]
+  .text            ro code     0xec6   0x11  __dbg_xxexit.o [2]
+  .text            ro code     0xed7    0xc  clock.o [1]
+  .text            ro code     0xee3    0xb  r_cg_systeminit.o [1]
+  .text            ro code     0xeee    0xa  l01.o [3]
+  .text            ro code     0xef8    0xa  __dbg_abort.o [2]
+  .text            ro code     0xf02    0x5  cexit.o [3]
+  .text            ro code     0xf07    0x3  exit.o [3]
+  .text            ro code     0xf0a    0x3  __dbg_break.o [2]
+  .text            ro code     0xf0d    0x1  r_cg_wdt_user.o [1]
+                             - 0xf0e  0xba5
+
+"ROMFAR":                               0x8
+  .iar.init_table  const       0xf0e    0x8  - Linker created -
+                             - 0xf16    0x8
+
+"ROMHUGE":                             0x66
+  .textf           ro code     0xf16   0x41  data_init.o [3]
+  .textf           ro code     0xf57   0x25  near_zero_init.o [3]
+                             - 0xf7c   0x66
+
+Absolute sections, part 1 of 51:        0x1
+  .bss.noinit      uninit   0xf'0031    0x1  r_cg_lcd.o [1]
+                          - 0xf'0032    0x1
+
+Absolute sections, part 2 of 51:        0x1
+  .bss.noinit      uninit   0xf'0033    0x1  r_cg_lcd.o [1]
+                          - 0xf'0034    0x1
+
+Absolute sections, part 3 of 51:        0x2
+  .bss.noinit      uninit   0xf'0037    0x1  r_cg_lcd.o [1]
+  .bss.noinit      uninit   0xf'0038    0x1  r_cg_lcd.o [1]
+                          - 0xf'0039    0x2
+
+Absolute sections, part 4 of 51:        0x1
+  .bss.noinit      uninit   0xf'0041    0x1  r_cg_lcd.o [1]
+                          - 0xf'0042    0x1
+
+Absolute sections, part 5 of 51:        0x1
+  .bss.noinit      uninit   0xf'0048    0x1  r_cg_lcd.o [1]
+                          - 0xf'0049    0x1
+
+Absolute sections, part 6 of 51:        0x1
+  .bss.noinit      uninit   0xf'0051    0x1  r_cg_lcd.o [1]
+                          - 0xf'0052    0x1
+
+Absolute sections, part 7 of 51:        0x1
+  .bss.noinit      uninit   0xf'0055    0x1  pcb.o [1]
+                          - 0xf'0056    0x1
+
+Absolute sections, part 8 of 51:        0x1
+  .bss.noinit      uninit   0xf'0058    0x1  r_cg_lcd.o [1]
+                          - 0xf'0059    0x1
+
+Absolute sections, part 9 of 51:        0x1
+  .bss.noinit      uninit   0xf'0070    0x1  r_cg_sau.o [1]
+                          - 0xf'0071    0x1
+
+Absolute sections, part 10 of 51:       0x1
+  .bss.noinit      uninit   0xf'0098    0x1  r_cg_cgc.o [1]
+                          - 0xf'0099    0x1
+
+Absolute sections, part 11 of 51:       0x1
+  .bss.noinit      uninit   0xf'00f0    0x1  r_cg_sau.o [1]
+                          - 0xf'00f1    0x1
+
+Absolute sections, part 12 of 51:       0x1
+  .bss.noinit      uninit   0xf'00f3    0x1  r_cg_cgc.o [1]
+                          - 0xf'00f4    0x1
+
+Absolute sections, part 13 of 51:       0x1
+  .bss.noinit      uninit   0xf'00f5    0x1  system.o [1]
+                          - 0xf'00f6    0x1
+
+Absolute sections, part 14 of 51:       0x1
+  .bss.noinit      uninit   0xf'00fc    0x1  r_cg_cgc.o [1]
+                          - 0xf'00fd    0x1
+
+Absolute sections, part 15 of 51:       0x2
+  .bss.noinit      uninit   0xf'0106    0x2  r_cg_sau_user.o [1]
+                          - 0xf'0108    0x2
+
+Absolute sections, part 16 of 51:       0x2
+  .bss.noinit      uninit   0xf'010e    0x2  r_cg_sau_user.o [1]
+                          - 0xf'0110    0x2
+
+Absolute sections, part 17 of 51:       0x4
+  .bss.noinit      uninit   0xf'0122    0x2  r_cg_sau_user.o [1]
+  .bss.noinit      uninit   0xf'0124    0x2  r_cg_sau_user.o [1]
+                          - 0xf'0126    0x4
+
+Absolute sections, part 18 of 51:       0x2
+  .bss.noinit      uninit   0xf'0142    0x2  r_cg_sau_user.o [1]
+                          - 0xf'0144    0x2
+
+Absolute sections, part 19 of 51:       0x2
+  .bss.noinit      uninit   0xf'014a    0x2  r_cg_sau_user.o [1]
+                          - 0xf'014c    0x2
+
+Absolute sections, part 20 of 51:       0x4
+  .bss.noinit      uninit   0xf'0150    0x2  r_cg_sau.o [1]
+  .bss.noinit      uninit   0xf'0152    0x2  r_cg_sau.o [1]
+                          - 0xf'0154    0x4
+
+Absolute sections, part 21 of 51:       0x4
+  .bss.noinit      uninit   0xf'0158    0x2  r_cg_sau.o [1]
+  .bss.noinit      uninit   0xf'015a    0x2  r_cg_sau.o [1]
+                          - 0xf'015c    0x4
+
+Absolute sections, part 22 of 51:       0xa
+  .bss.noinit      uninit   0xf'0162    0x2  r_cg_sau_user.o [1]
+  .bss.noinit      uninit   0xf'0164    0x2  r_cg_sau_user.o [1]
+  .bss.noinit      uninit   0xf'0166    0x2  r_cg_sau.o [1]
+  .bss.noinit      uninit   0xf'0168    0x2  r_cg_sau.o [1]
+  .bss.noinit      uninit   0xf'016a    0x2  r_cg_sau.o [1]
+                          - 0xf'016c    0xa
+
+Absolute sections, part 23 of 51:       0x2
+  .bss.noinit      uninit   0xf'0174    0x2  r_cg_sau.o [1]
+                          - 0xf'0176    0x2
+
+Absolute sections, part 24 of 51:       0x2
+  .bss.noinit      uninit   0xf'02e5    0x1  r_cg_cgc.o [1]
+  .bss.noinit      uninit   0xf'02e6    0x1  r_cg_cgc.o [1]
+                          - 0xf'02e7    0x2
+
+Absolute sections, part 25 of 51:       0x5
+  .bss.noinit      uninit   0xf'0300    0x1  r_cg_lcd.o [1]
+  .bss.noinit      uninit   0xf'0301    0x1  r_cg_lcd.o [1]
+  .bss.noinit      uninit   0xf'0302    0x1  r_cg_lcd.o [1]
+  .bss.noinit      uninit   0xf'0303    0x1  r_cg_lcd.o [1]
+  .bss.noinit      uninit   0xf'0304    0x1  pcb.o [1]
+                          - 0xf'0305    0x5
+
+Absolute sections, part 26 of 51:       0x1
+  .bss.noinit      uninit   0xf'0308    0x1  r_cg_lcd.o [1]
+                          - 0xf'0309    0x1
+
+Absolute sections, part 27 of 51:       0x4
+  .bss.noinit      uninit   0xf'0332    0x1  r_cg_lvd_user.o [1]
+  .bss.noinit      uninit   0xf'0333    0x1  r_cg_lvd_user.o [1]
+  .bss.noinit      uninit   0xf'0334    0x1  r_cg_lvd_user.o [1]
+  .bss.noinit      uninit   0xf'0335    0x1  system.o [1]
+                          - 0xf'0336    0x4
+
+Absolute sections, part 28 of 51:       0x1
+  .bss.noinit      uninit   0xf'0384    0x1  r_cg_cgc.o [1]
+                          - 0xf'0385    0x1
+
+Absolute sections, part 29 of 51:       0x1
+  .bss.noinit      uninit   0xf'0386    0x1  r_cg_cgc.o [1]
+                          - 0xf'0387    0x1
+
+Absolute sections, part 30 of 51:       0x1
+  .bss.noinit      uninit   0xf'0404    0x1  lcd.o [1]
+                          - 0xf'0405    0x1
+
+"RAMNEAR", part 1 of 2:               0x4d8
+  CSTACK                    0xf'bf00  0x4d8  <Block>
+    CSTACK         rw data  0xf'bf00    0x0  cstartup.o [3]
+    CSTACK         uninit   0xf'bf00  0x4d8  <Block tail>
+                          - 0xf'c3d8  0x4d8
+
+"RAMNEAR", part 2 of 2:               0x142
+  .bss             zero     0xf'c3d8  0x106  Flash_Protocol.o [1]
+  .bss             zero     0xf'c4de   0x1a  lcd.o [1]
+  .bss             zero     0xf'c4f8    0x4  Flash_Protocol.o [1]
+  .bss             zero     0xf'c4fc    0x4  Flash_Protocol.o [1]
+  .bss             zero     0xf'c500    0x2  Flash_Protocol.o [1]
+  .bss             zero     0xf'c502    0x2  Flash_Protocol.o [1]
+  .bss             zero     0xf'c504    0x2  Flash_Protocol.o [1]
+  .bss             zero     0xf'c506    0x2  Flash_Protocol.o [1]
+  .bss             zero     0xf'c508    0x2  Flash_Protocol.o [1]
+  .bss             zero     0xf'c50a    0x2  r_cg_sau.o [1]
+  .bss             zero     0xf'c50c    0x2  r_cg_sau.o [1]
+  .bss             zero     0xf'c50e    0x1  clock.o [1]
+  .bss             zero     0xf'c50f    0x1  clock.o [1]
+  .bss             zero     0xf'c510    0x1  Flash_Protocol.o [1]
+  .bss             zero     0xf'c511    0x1  Flash_Protocol.o [1]
+  .bss             zero     0xf'c512    0x1  Flash_Protocol.o [1]
+  .bss             zero     0xf'c513    0x1  Flash_Protocol.o [1]
+  .bss             zero     0xf'c514    0x1  Flash_Protocol.o [1]
+  .bss             zero     0xf'c515    0x1  Flash_Protocol.o [1]
+  .bss             zero     0xf'c516    0x1  sleep.o [1]
+  .bss             zero     0xf'c517    0x1  sleep.o [1]
+  .bss             zero     0xf'c518    0x1  system.o [1]
+  .bss             zero     0xf'c519    0x1  system.o [1]
+                          - 0xf'c51a  0x142
+
+"SADDRMEM":                             0x0
+  .wrkseg          rw data  0xf'fe20    0x0  cstartup.o [3]
+
+Absolute sections, part 31 of 51:       0x1
+  .sbss.noinit     uninit   0xf'ff01    0x1  r_cg_lcd.o [1]
+                          - 0xf'ff02    0x1
+
+Absolute sections, part 32 of 51:       0x3
+  .sbss.noinit     uninit   0xf'ff03    0x1  r_cg_lcd.o [1]
+  .sbss.noinit     uninit   0xf'ff04    0x1  pcb.o [1]
+  .sbss.noinit     uninit   0xf'ff05    0x1  system.o [1]
+                          - 0xf'ff06    0x3
+
+Absolute sections, part 33 of 51:       0x2
+  .sbss.noinit     uninit   0xf'ff07    0x1  r_cg_lcd.o [1]
+  .sbss.noinit     uninit   0xf'ff08    0x1  r_cg_lcd.o [1]
+                          - 0xf'ff09    0x2
+
+Absolute sections, part 34 of 51:       0x1
+  .sbss.noinit     uninit   0xf'ff0c    0x1  r_cg_lcd.o [1]
+                          - 0xf'ff0d    0x1
+
+Absolute sections, part 35 of 51:       0x1
+  .bss.noinit      uninit   0xf'ff21    0x1  r_cg_lcd.o [1]
+                          - 0xf'ff22    0x1
+
+Absolute sections, part 36 of 51:       0x3
+  .bss.noinit      uninit   0xf'ff23    0x1  r_cg_lcd.o [1]
+  .bss.noinit      uninit   0xf'ff24    0x1  pcb.o [1]
+  .bss.noinit      uninit   0xf'ff25    0x1  pcb.o [1]
+                          - 0xf'ff26    0x3
+
+Absolute sections, part 37 of 51:       0x2
+  .bss.noinit      uninit   0xf'ff27    0x1  r_cg_lcd.o [1]
+  .bss.noinit      uninit   0xf'ff28    0x1  r_cg_lcd.o [1]
+                          - 0xf'ff29    0x2
+
+Absolute sections, part 38 of 51:       0x1
+  .bss.noinit      uninit   0xf'ff2c    0x1  r_cg_lcd.o [1]
+                          - 0xf'ff2d    0x1
+
+Absolute sections, part 39 of 51:       0x4
+  .bss.noinit      uninit   0xf'ff40    0x1  r_cg_lcd.o [1]
+  .bss.noinit      uninit   0xf'ff41    0x1  r_cg_lcd.o [1]
+  .bss.noinit      uninit   0xf'ff42    0x1  r_cg_lcd.o [1]
+  .bss.noinit      uninit   0xf'ff43    0x1  r_cg_lcd.o [1]
+                          - 0xf'ff44    0x4
+
+Absolute sections, part 40 of 51:       0x6
+  .bss.noinit      uninit   0xf'ff46    0x2  r_cg_sau_user.o [1]
+  .bss.noinit      uninit   0xf'ff48    0x2  r_cg_sau.o [1]
+  .bss.noinit      uninit   0xf'ff4a    0x2  r_cg_sau_user.o [1]
+                          - 0xf'ff4c    0x6
+
+Absolute sections, part 41 of 51:       0x2
+  .bss.noinit      uninit   0xf'ffa0    0x1  r_cg_cgc.o [1]
+  .bss.noinit      uninit   0xf'ffa1    0x1  r_cg_cgc.o [1]
+                          - 0xf'ffa2    0x2
+
+Absolute sections, part 42 of 51:       0x1
+  .bss.noinit      uninit   0xf'ffa7    0x1  r_cg_cgc.o [1]
+                          - 0xf'ffa8    0x1
+
+Absolute sections, part 43 of 51:       0x1
+  .bss.noinit      uninit   0xf'ffa9    0x1  r_cg_lvd_user.o [1]
+                          - 0xf'ffaa    0x1
+
+Absolute sections, part 44 of 51:       0x1
+  .bss.noinit      uninit   0xf'ffab    0x1  r_cg_wdt.o [1]
+                          - 0xf'ffac    0x1
+
+Absolute sections, part 45 of 51:       0x2
+  .bss.noinit      uninit   0xf'ffd2    0x2  r_cg_lvd.o [1]
+                          - 0xf'ffd4    0x2
+
+Absolute sections, part 46 of 51:       0x2
+  .bss.noinit      uninit   0xf'ffd6    0x2  r_cg_lvd.o [1]
+                          - 0xf'ffd8    0x2
+
+Absolute sections, part 47 of 51:       0x2
+  .bss.noinit      uninit   0xf'ffda    0x2  r_cg_lvd.o [1]
+                          - 0xf'ffdc    0x2
+
+Absolute sections, part 48 of 51:       0x4
+  .bss.noinit      uninit   0xf'ffde    0x2  r_cg_lvd.o [1]
+  .bss.noinit      uninit   0xf'ffe0    0x2  r_cg_wdt.o [1]
+                          - 0xf'ffe2    0x4
+
+Absolute sections, part 49 of 51:       0x2
+  .bss.noinit      uninit   0xf'ffe4    0x2  r_cg_wdt.o [1]
+                          - 0xf'ffe6    0x2
+
+Absolute sections, part 50 of 51:       0x2
+  .bss.noinit      uninit   0xf'ffe8    0x2  r_cg_sau.o [1]
+                          - 0xf'ffea    0x2
+
+Absolute sections, part 51 of 51:       0x2
+  .bss.noinit      uninit   0xf'ffec    0x2  r_cg_sau.o [1]
+                          - 0xf'ffee    0x2
+
+Unused ranges:
+
+      From        To      Size
+      ----        --      ----
+     0xf7c  0x3'fdff  0x3'ee84
+  0xf'c51a  0xf'fe1f    0x3906
+  0xf'fe20  0xf'fedf      0xc0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address   Size
+          -------   ----
+Zero (___iar_zero_init_near2)
+    1 destination range, total size 0x142:
+          0xf'c3d8  0x142
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module              ro code  ro data  rw data  rw data
+                                                    (abs)
+    ------              -------  -------  -------  -------
+command line/config:
+    ------------------------------------------------------
+    Total:
+
+D:\Software code\Projects Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 - BootCode-20210104T103109Z-001\0. GDEV72 - BootCode\Debug\Obj: [1]
+    Flash_Protocol.o      1'290               286
+    clock.o                  12                 2
+    common_function.o       230
+    lcd.o                   202                26        1
+    main.o                  169
+    pcb.o                    74                          5
+    r_cg_cgc.o              176                         10
+    r_cg_lcd.o              197                         27
+    r_cg_lvd.o               51                          8
+    r_cg_lvd_user.o         144                          4
+    r_cg_sau.o                                  4       24
+    r_cg_sau_user.o         172                         20
+    r_cg_systeminit.o        11
+    r_cg_wdt.o               17                          5
+    r_cg_wdt_user.o           1
+    sleep.o                                     2
+    system.o                110       14        2        3
+    ------------------------------------------------------
+    Total:                2'856       14      322      107
+
+dbgrlnnf23nd.a: [2]
+    __dbg_abort.o            10
+    __dbg_break.o             3
+    __dbg_xxexit.o           17
+    ------------------------------------------------------
+    Total:                   30
+
+dlrlnnf23n.a: [3]
+    cexit.o                   5
+    cstartup.o               58
+    data_init.o              65
+    default_handler.o        19
+    exit.o                    3
+    interrupt_vector.o               126
+    l01.o                    10
+    near_zero_init.o         37
+    ------------------------------------------------------
+    Total:                  197      126
+
+fsl.a: [4]
+    fsl_b_common            256
+    fsl_be_common           128
+    fsl_f_init              103
+    fsl_f_open                5
+    fsl_f_pefunc             25
+    fsl_f_pfunc              41
+    fsl_r_br_becd            13
+    fsl_r_check_flow         40
+    fsl_r_reset               1
+    fsl_r_ss_ibf              8
+    fsl_r_std_cmd            31
+    ------------------------------------------------------
+    Total:                  651
+
+    Gaps                      5
+    Linker created                     8    1'240
+----------------------------------------------------------
+    Grand Total:          3'739      148    1'562      107
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                    Address   Size  Type      Object
+-----                    -------   ----  ----      ------
+.iar.init_table$$Base      0xf0e          --   Gb  - Linker created -
+.iar.init_table$$Limit     0xf16          --   Gb  - Linker created -
+?C_LSH_L01                 0xeee         Code  Gb  l01.o [3]
+CSTACK$$Base            0xf'bf00          --   Gb  - Linker created -
+CSTACK$$Limit           0xf'c3d8          --   Gb  - Linker created -
+OPT_BYTE$$Base              0xc0          --   Gb  - Linker created -
+OPT_BYTE$$Limit             0xc4          --   Gb  - Linker created -
+Region$$Table$$Base        0xf0e          --   Gb  - Linker created -
+Region$$Table$$Limit       0xf16          --   Gb  - Linker created -
+SECUR_ID$$Base              0xc4          --   Gb  - Linker created -
+SECUR_ID$$Limit             0xce          --   Gb  - Linker created -
+_ASM_BCD_End               0x28a          --   Wk  fsl_b_common [4]
+_ASM_BCD_Start             0x18a          --   Wk  fsl_b_common [4]
+_ASM_BECD_End              0x30a          --   Wk  fsl_be_common [4]
+_ASM_BECD_Start            0x28a          --   Wk  fsl_be_common [4]
+_ASM_RCD_Branch_BECD_Entry
+                           0x352          --   Wk  fsl_r_br_becd [4]
+_ASM_RCD_Check_Ext_Flow
+                           0x30a          --   Wk  fsl_r_check_flow [4]
+_ASM_RCD_Check_Flow        0x326          --   Wk  fsl_r_check_flow [4]
+_FSL_Analyse_Data_Pkt_f
+                        0xf'c513    0x1  Data  Gb  Flash_Protocol.o [1]
+_FSL_Erase                 0x337          --   Wk  fsl_r_std_cmd [4]
+_FSL_ForceReset            0x368          --   Wk  fsl_r_reset [4]
+_FSL_IVerify               0x33c          --   Wk  fsl_r_std_cmd [4]
+_FSL_Init                   0xd8          --   Wk  fsl_f_init [4]
+_FSL_InvertBootFlag        0x360          --   Wk  fsl_r_ss_ibf [4]
+_FSL_Open                  0x184          --   Wk  fsl_f_open [4]
+_FSL_PrepareExtFunctions
+                           0x16a          --   Wk  fsl_f_pefunc [4]
+_FSL_PrepareFunctions      0x140          --   Wk  fsl_f_pfunc [4]
+_FSL_Prepare_common        0x156          --   Wk  fsl_f_pfunc [4]
+_FSL_RX_Data_Pkt_length
+                        0xf'c504    0x2  Data  Gb  Flash_Protocol.o [1]
+_FSL_Reset_f            0xf'c515    0x1  Data  Gb  Flash_Protocol.o [1]
+_FSL_Serial_counter     0xf'c510    0x1  Data  Gb  Flash_Protocol.o [1]
+_FSL_Serial_rxcounter   0xf'c506    0x2  Data  Gb  Flash_Protocol.o [1]
+_FSL_TX_Data_Pkt_length
+                        0xf'c511    0x1  Data  Gb  Flash_Protocol.o [1]
+_FSL_Write                 0x341          --   Wk  fsl_r_std_cmd [4]
+_FSL_data_array         0xf'c3d8  0x106  Data  Gb  Flash_Protocol.o [1]
+_FSL_delay                 0x858   0x1b  Code  Gb  Flash_Protocol.o [1]
+_Flash_write_flag       0xf'c512    0x1  Data  Gb  Flash_Protocol.o [1]
+_MulFactor              0xf'c50f    0x1  Data  Gb  clock.o [1]
+_NEAR_CONST_LOCATION {Abs}
+                             0x2         Data  Gb  <internal module>
+_R_CGC_Create              0xae8   0xb0  Code  Gb  r_cg_cgc.o [1]
+_R_LCD_Create              0xa23   0xae  Code  Gb  r_cg_lcd.o [1]
+_R_LCD_Start               0xad1    0x4  Code  Gb  r_cg_lcd.o [1]
+_R_LCD_Voltage_On          0xad5   0x13  Code  Gb  r_cg_lcd.o [1]
+_R_LVD_Create              0xe6f   0x28  Code  Gb  r_cg_lvd.o [1]
+_R_LVD_Create_UserInit     0xced    0x1  Code  Gb  r_cg_lvd_user.o [1]
+_R_LVD_Start_EXLVD         0xe97    0xb  Code  Gb  r_cg_lvd.o [1]
+_R_Systeminit              0xee3    0x1  Code  Gb  r_cg_systeminit.o [1]
+_R_WDT_Create              0xeb5    0xd  Code  Gb  r_cg_wdt.o [1]
+_R_WDT_Create_UserInit     0xf0d    0x1  Code  Gb  r_cg_wdt_user.o [1]
+_R_WDT_Restart             0xec2    0x4  Code  Gb  r_cg_wdt.o [1]
+_Reset_Add              0xf'c502    0x2  Data  Gb  Flash_Protocol.o [1]
+_Self_Programming_Init     0x47c   0x38  Code  Gb  Flash_Protocol.o [1]
+_Self_Programming_Protocol_Analyse_Pkt
+                           0x5e7   0x3b  Code  Gb  Flash_Protocol.o [1]
+_Self_Programming_Protocol_Prepare_Pkt
+                           0x622  0x14b  Code  Gb  Flash_Protocol.o [1]
+_Self_Programming_UART_Data_Recieve
+                           0x4b4  0x101  Code  Gb  Flash_Protocol.o [1]
+_Self_Programming_UART_Data_Transmit
+                           0x76d   0x6e  Code  Gb  Flash_Protocol.o [1]
+_Self_Programming_UART_Init
+                           0x369   0xe3  Code  Gb  Flash_Protocol.o [1]
+_Self_Programming_Write
+                           0x7db   0x7d  Code  Gb  Flash_Protocol.o [1]
+_Self_Programming_main     0x44c   0x30  Code  Gb  Flash_Protocol.o [1]
+_Verify_ChkSum             0x5b5   0x32  Code  Gb  Flash_Protocol.o [1]
+_WriteBlock1            0xf'c508    0x2  Data  Gb  Flash_Protocol.o [1]
+_Write_addr             0xf'c4f8    0x4  Data  Gb  Flash_Protocol.o [1]
+_Write_addr_temp        0xf'c4fc    0x4  Data  Gb  Flash_Protocol.o [1]
+__A_CKSEL               0xf'ffa7    0x1  Data  Gb  r_cg_cgc.o [1]
+__A_CMC                 0xf'ffa0    0x1  Data  Gb  r_cg_cgc.o [1]
+__A_CSC                 0xf'ffa1    0x1  Data  Gb  r_cg_cgc.o [1]
+__A_DSCCTL              0xf'02e5    0x1  Data  Gb  r_cg_cgc.o [1]
+__A_IF0                 0xf'ffe0    0x2  Data  Gb  r_cg_wdt.o [1]
+__A_IF3                 0xf'ffd2    0x2  Data  Gb  r_cg_lvd.o [1]
+__A_ISCLCD              0xf'0308    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_LCDC0               0xf'ff42    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_LCDM0               0xf'ff40    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_LCDM1               0xf'ff41    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_LVDEXLVD            0xf'0335    0x1  Data  Gb  system.o [1]
+__A_LVDVBAT             0xf'0333    0x1  Data  Gb  r_cg_lvd_user.o [1]
+__A_LVDVDD              0xf'0332    0x1  Data  Gb  r_cg_lvd_user.o [1]
+__A_LVDVRTC             0xf'0334    0x1  Data  Gb  r_cg_lvd_user.o [1]
+__A_LVIM                0xf'ffa9    0x1  Data  Gb  r_cg_lvd_user.o [1]
+__A_MCKC                0xf'02e6    0x1  Data  Gb  r_cg_cgc.o [1]
+__A_MK0                 0xf'ffe4    0x2  Data  Gb  r_cg_wdt.o [1]
+__A_MK3                 0xf'ffd6    0x2  Data  Gb  r_cg_lvd.o [1]
+__A_NFEN0               0xf'0070    0x1  Data  Gb  r_cg_sau.o [1]
+__A_OSMC                0xf'00f3    0x1  Data  Gb  r_cg_cgc.o [1]
+__A_P1                  0xf'ff01    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_P12                 0xf'ff0c    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_P3                  0xf'ff03    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_P4                  0xf'ff04    0x1  Data  Gb  pcb.o [1]
+__A_P5                  0xf'ff05    0x1  Data  Gb  system.o [1]
+__A_P7                  0xf'ff07    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_P8                  0xf'ff08    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PCKC                0xf'0098    0x1  Data  Gb  r_cg_cgc.o [1]
+__A_PER0                0xf'00f0    0x1  Data  Gb  r_cg_sau.o [1]
+__A_PER2                0xf'00fc    0x1  Data  Gb  r_cg_cgc.o [1]
+__A_PFSEG0              0xf'0300    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PFSEG1              0xf'0301    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PFSEG2              0xf'0302    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PFSEG3              0xf'0303    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PFSEG4              0xf'0304    0x1  Data  Gb  pcb.o [1]
+__A_PIM1                0xf'0041    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PIM8                0xf'0048    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PM1                 0xf'ff21    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PM12                0xf'ff2c    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PM3                 0xf'ff23    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PM4                 0xf'ff24    0x1  Data  Gb  pcb.o [1]
+__A_PM5                 0xf'ff25    0x1  Data  Gb  pcb.o [1]
+__A_PM7                 0xf'ff27    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PM8                 0xf'ff28    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_POM1                0xf'0051    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_POM5                0xf'0055    0x1  Data  Gb  pcb.o [1]
+__A_POM8                0xf'0058    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PR00                0xf'ffe8    0x2  Data  Gb  r_cg_sau.o [1]
+__A_PR03                0xf'ffda    0x2  Data  Gb  r_cg_lvd.o [1]
+__A_PR10                0xf'ffec    0x2  Data  Gb  r_cg_sau.o [1]
+__A_PR13                0xf'ffde    0x2  Data  Gb  r_cg_lvd.o [1]
+__A_PU1                 0xf'0031    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PU3                 0xf'0033    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PU7                 0xf'0037    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_PU8                 0xf'0038    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_RPECTL              0xf'00f5    0x1  Data  Gb  system.o [1]
+__A_SCMC                0xf'0384    0x1  Data  Gb  r_cg_cgc.o [1]
+__A_SCR10               0xf'0158    0x2  Data  Gb  r_cg_sau.o [1]
+__A_SCR11               0xf'015a    0x2  Data  Gb  r_cg_sau.o [1]
+__A_SCSC                0xf'0386    0x1  Data  Gb  r_cg_cgc.o [1]
+__A_SDR03               0xf'ff46    0x2  Data  Gb  r_cg_sau_user.o [1]
+__A_SDR10               0xf'ff48    0x2  Data  Gb  r_cg_sau.o [1]
+__A_SDR11               0xf'ff4a    0x2  Data  Gb  r_cg_sau_user.o [1]
+__A_SEG4                0xf'0404    0x1  Data  Gb  lcd.o [1]
+__A_SIR03               0xf'010e    0x2  Data  Gb  r_cg_sau_user.o [1]
+__A_SIR11               0xf'014a    0x2  Data  Gb  r_cg_sau_user.o [1]
+__A_SMR10               0xf'0150    0x2  Data  Gb  r_cg_sau.o [1]
+__A_SMR11               0xf'0152    0x2  Data  Gb  r_cg_sau.o [1]
+__A_SO1                 0xf'0168    0x2  Data  Gb  r_cg_sau.o [1]
+__A_SOE1                0xf'016a    0x2  Data  Gb  r_cg_sau.o [1]
+__A_SOL1                0xf'0174    0x2  Data  Gb  r_cg_sau.o [1]
+__A_SPS1                0xf'0166    0x2  Data  Gb  r_cg_sau.o [1]
+__A_SS0                 0xf'0122    0x2  Data  Gb  r_cg_sau_user.o [1]
+__A_SS1                 0xf'0162    0x2  Data  Gb  r_cg_sau_user.o [1]
+__A_SSR03               0xf'0106    0x2  Data  Gb  r_cg_sau_user.o [1]
+__A_SSR11               0xf'0142    0x2  Data  Gb  r_cg_sau_user.o [1]
+__A_ST0                 0xf'0124    0x2  Data  Gb  r_cg_sau_user.o [1]
+__A_ST1                 0xf'0164    0x2  Data  Gb  r_cg_sau_user.o [1]
+__A_VLCD                0xf'ff43    0x1  Data  Gb  r_cg_lcd.o [1]
+__A_WDTE                0xf'ffab    0x1  Data  Gb  r_cg_wdt.o [1]
+___DebugBreak              0xf0a    0x3  Code  Gb  __dbg_break.o [2]
+___exit                    0xec6   0x11  Code  Gb  __dbg_xxexit.o [2]
+___iar_data_init2          0xf16   0x41  Code  Gb  data_init.o [3]
+___iar_default_interrupt_handler
+                           0xea2   0x13  Code  Lc  default_handler.o [3]
+___iar_zero_init_near2     0xf57   0x25  Code  Gb  near_zero_init.o [3]
+___interrupt_0x06          0xcee         Code  Gb  r_cg_lvd_user.o [1]
+___interrupt_0x14          0xc3e         Code  Gb  r_cg_sau_user.o [1]
+___interrupt_0x16          0xbf3         Code  Gb  r_cg_sau_user.o [1]
+___interrupt_0x18          0xbf9         Code  Gb  r_cg_sau_user.o [1]
+___interrupt_0x26          0xbed         Code  Gb  r_cg_sau_user.o [1]
+___interrupt_0x28          0xb98         Code  Gb  r_cg_sau_user.o [1]
+___interrupt_0x2A          0xba8         Code  Gb  r_cg_sau_user.o [1]
+___interrupt_0x6C          0xd0b         Code  Gb  r_cg_lvd_user.o [1]
+___interrupt_0x6E          0xd28         Code  Gb  r_cg_lvd_user.o [1]
+___interrupt_0x70          0xd45         Code  Gb  r_cg_lvd_user.o [1]
+___interrupt_0x72          0xd62         Code  Gb  r_cg_lvd_user.o [1]
+___low_level_init          0xee4    0xa  Code  Gb  r_cg_systeminit.o [1]
+__exit                     0xf02         Code  Gb  cexit.o [3]
+__iar_exit_end             0xf07         Code  Gb  cexit.o [3]
+__iar_program_start        0xe35         Code  Gb  cstartup.o [3]
+__link_file_version_2 {Abs}
+                             0x1         Data  Gb  <internal module>
+__program_end              0xe6f         Code  Gb  cstartup.o [3]
+_abort                     0xef8    0xa  Code  Gb  __dbg_abort.o [2]
+_backlight_operation       0xdd5   0x16  Code  Gb  system.o [1]
+_clear_ram                 0xd7d   0x4b  Code  Gb  system.o [1]
+_clock_init                0xed7    0xc  Code  Gb  clock.o [1]
+_clock_select           0xf'c50e    0x1  Data  Gb  clock.o [1]
+_delay                     0x950    0x9  Code  Gb  common_function.o [1]
+_delay_ms                  0x8a0   0xb0  Code  Gb  common_function.o [1]
+_exit                      0xf07    0x3  Code  Gb  exit.o [3]
+_flag1                  0xf'c518    0x1  Data  Gb  system.o [1]
+_flag_lvd1              0xf'c516    0x1  Data  Gb  sleep.o [1]
+_flag_lvd2              0xf'c517    0x1  Data  Gb  sleep.o [1]
+_flash_complete         0xf'c514    0x1  Data  Gb  Flash_Protocol.o [1]
+_gp_uart1_rx_address    0xf'c50a    0x2  Data  Gb  r_cg_sau.o [1]
+_gp_uart2_rx_address    0xf'c50c    0x2  Data  Gb  r_cg_sau.o [1]
+_increment              0xf'c500    0x2  Data  Gb  Flash_Protocol.o [1]
+_interrupt_vector_table
+                             0x0         Data  Gb  interrupt_vector.o [3]
+_last_interrupt         0xf'c519    0x1  Data  Gb  system.o [1]
+_lcd_clear_var             0xa07   0x1c  Code  Gb  lcd.o [1]
+_lcd_disp_off              0x967   0x2b  Code  Gb  lcd.o [1]
+_lcd_init                  0x959    0x7  Code  Gb  lcd.o [1]
+_lcd_map                0xf'c4de   0x1a  Data  Gb  lcd.o [1]
+_lcd_start                 0x960    0x7  Code  Gb  lcd.o [1]
+_lcd_write                 0x992   0x75  Code  Gb  lcd.o [1]
+_lvd_start                 0xdd1    0x4  Code  Gb  system.o [1]
+_main                      0xc44   0xa9  Code  Gb  main.o [1]
+_opbyte0                    0xc0    0x1  Data  Gb  system.o [1]
+_opbyte1                    0xc1    0x1  Data  Gb  system.o [1]
+_opbyte2                    0xc2    0x1  Data  Gb  system.o [1]
+_opbyte3                    0xc3    0x1  Data  Gb  system.o [1]
+_pcb_init_universal        0xdeb   0x4a  Code  Gb  pcb.o [1]
+_r_lvd_exlvdinterrupt      0xd62   0x1b  Code  Lc  r_cg_lvd_user.o [1]
+_r_lvd_interrupt           0xcee   0x1d  Code  Lc  r_cg_lvd_user.o [1]
+_r_lvd_vbatinterrupt       0xd28   0x1d  Code  Lc  r_cg_lvd_user.o [1]
+_r_lvd_vddinterrupt        0xd0b   0x1d  Code  Lc  r_cg_lvd_user.o [1]
+_r_lvd_vrtcinterrupt       0xd45   0x1d  Code  Lc  r_cg_lvd_user.o [1]
+_r_uart1_interrupt_error
+                           0xba8   0x45  Code  Lc  r_cg_sau_user.o [1]
+_r_uart1_interrupt_receive
+                           0xb98   0x10  Code  Lc  r_cg_sau_user.o [1]
+_r_uart1_interrupt_send
+                           0xbed    0x6  Code  Lc  r_cg_sau_user.o [1]
+_r_uart2_interrupt_error
+                           0xbf9   0x45  Code  Lc  r_cg_sau_user.o [1]
+_r_uart2_interrupt_receive
+                           0xbf3    0x6  Code  Lc  r_cg_sau_user.o [1]
+_r_uart2_interrupt_send
+                           0xc3e    0x6  Code  Lc  r_cg_sau_user.o [1]
+_read_operating_mode       0xdc8    0x9  Code  Gb  system.o [1]
+_reverse_8bits             0x873   0x2d  Code  Gb  common_function.o [1]
+_secuid                     0xc4    0xa  Data  Gb  system.o [1]
+
+
+[1] = D:\Software code\Projects Software\Projects new\0. Non AMI\SUGAM Based\0. GDEV72 - BootCode-20210104T103109Z-001\0. GDEV72 - BootCode\Debug\Obj
+[2] = dbgrlnnf23nd.a
+[3] = dlrlnnf23n.a
+[4] = fsl.a
+
+  3'739 bytes of readonly  code memory
+    148 bytes of readonly  data memory
+  1'562 bytes of readwrite data memory (+ 107 absolute)
+
+Errors: none
+Warnings: none

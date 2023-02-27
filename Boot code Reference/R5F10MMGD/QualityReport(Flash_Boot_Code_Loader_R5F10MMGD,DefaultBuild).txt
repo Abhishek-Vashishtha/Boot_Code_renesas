@@ -1,0 +1,301 @@
+QualityReport
+Wednesday, October 19, 2016 10:29:56 AM
+
+------ Start build(Flash_Boot_Code_Loader_R5F10MMGD, DefaultBuild) ------
+C:\Program Files\Renesas Electronics\CS+\CC\CC-RL\V1.03.00\Bin\ccrl.exe "Source files\Flash_Protocol.c" -cpu=S3 -obj_path=DefaultBuild "-dev=C:\Program Files\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10MMG.DVF" -c -g -I "Self Programming Library" -I "Source files" -exec_time=C:\Users\a.pareek\AppData\Local\Temp\tmp9601.tmp -msg_lang=english
+C:\Program Files\Renesas Electronics\CS+\CC\CC-RL\V1.03.00\Bin\ccrl.exe "Source files\cstart.asm" -cpu=S3 -obj_path=DefaultBuild "-dev=C:\Program Files\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10MMG.DVF" -c -g -exec_time=C:\Users\a.pareek\AppData\Local\Temp\tmp9602.tmp -msg_lang=english
+C:\Program Files\Renesas Electronics\CS+\CC\CC-RL\V1.03.00\Bin\rlink.exe -subcommand=DefaultBuild\Flash_Boot_Code_Loader_R5F10MMGD.clnk
+M0560400:Unused symbol "DefaultBuild\Flash_Protocol.obj"-"_R_WDT_Restart"
+M0560400:Unused symbol "DefaultBuild\Flash_Protocol.obj"-"_FSL_Blank"
+M0560400:Unused symbol "fsl_r_std_cmd"-"_FSL_BlankCheck"
+M0560400:Unused symbol "fsl_r_check_flow"-"_ASM_RCD_Check_Status_Flow"
+M0560400:Unused symbol "fsl_r_check_flow"-"_ASM_RCD_Check_StandBy_Flow"
+M0560400:Unused symbol "fsl_r_check_flow"-"_ASM_RCD_Check_WakeUp_Flow"
+M0560400:Unused symbol "rlink_generates_05"-"__s.vect"
+M0560400:Unused symbol "rlink_generates_05"-"__s.constf"
+M0560400:Unused symbol "rlink_generates_05"-"__e.constf"
+M0560400:Unused symbol "rlink_generates_05"-"__s.data"
+M0560400:Unused symbol "rlink_generates_05"-"__e.data"
+M0560400:Unused symbol "rlink_generates_05"-"__s.sdata"
+M0560400:Unused symbol "rlink_generates_05"-"__e.sdata"
+M0560400:Unused symbol "rlink_generates_05"-"__e.vect"
+M0560400:Unused symbol "rlink_generates_05"-"__s.option_byte"
+M0560400:Unused symbol "rlink_generates_05"-"__s.RLIB"
+M0560400:Unused symbol "rlink_generates_05"-"__e.RLIB"
+M0560400:Unused symbol "rlink_generates_05"-"__s.SLIB"
+M0560400:Unused symbol "rlink_generates_05"-"__e.SLIB"
+M0560400:Unused symbol "rlink_generates_05"-"__e.option_byte"
+M0560400:Unused symbol "rlink_generates_05"-"__s.security_id"
+M0560400:Unused symbol "rlink_generates_05"-"__s.monitor1"
+M0560400:Unused symbol "rlink_generates_05"-"__e.security_id"
+M0560400:Unused symbol "rlink_generates_05"-"__s.text"
+M0560400:Unused symbol "rlink_generates_05"-"__e.monitor1"
+M0560400:Unused symbol "rlink_generates_05"-"__e.text"
+M0560400:Unused symbol "rlink_generates_05"-"__sFSL_FCD"
+M0560400:Unused symbol "rlink_generates_05"-"__eFSL_FCD"
+M0560400:Unused symbol "rlink_generates_05"-"__sFSL_RCD"
+M0560400:Unused symbol "rlink_generates_05"-"__eFSL_RCD"
+M0560400:Unused symbol "rlink_generates_05"-"__sFSL_BCD"
+M0560400:Unused symbol "rlink_generates_05"-"__eFSL_BCD"
+M0560400:Unused symbol "rlink_generates_05"-"__sFSL_BECD"
+M0560400:Unused symbol "rlink_generates_05"-"__s.textf"
+M0560400:Unused symbol "rlink_generates_05"-"__eFSL_BECD"
+M0560400:Unused symbol "rlink_generates_05"-"__e.textf"
+M0560400:Unused symbol "rlink_generates_05"-"__s.const"
+M0560400:Unused symbol "rlink_generates_05"-"__e.const"
+M0560400:Unused symbol "rlink_generates_05"-"__s.monitor2"
+M0560400:Unused symbol "rlink_generates_05"-"__e.monitor2"
+M0560400:Unused symbol "rlink_generates_05"-"__s.bss"
+M0560400:Unused symbol "rlink_generates_05"-"__RAM_ADDR_START"
+M0560400:Unused symbol "rlink_generates_05"-"__e.bss"
+M0560400:Unused symbol "rlink_generates_05"-"__s.dataR"
+M0560400:Unused symbol "rlink_generates_05"-"__e.dataR"
+M0560400:Unused symbol "rlink_generates_05"-"__STACK_ADDR_END"
+M0560400:Unused symbol "rlink_generates_05"-"__s.sbss"
+M0560400:Unused symbol "rlink_generates_05"-"__e.sbss"
+M0560400:Unused symbol "rlink_generates_05"-"__s.sdataR"
+M0560400:Unused symbol "rlink_generates_05"-"__e.sdataR"
+M0560400:Unused symbol "rlink_generates_05"-"__RAM_ADDR_END"
+RAMDATA SECTION:  0000051e Byte(s)
+ROMDATA SECTION:  00000298 Byte(s)
+PROGRAM SECTION:  000007fd Byte(s)
+Renesas Optimizing Linker Completed
+------ Build ended(Error:0, Warning:0)(Flash_Boot_Code_Loader_R5F10MMGD, DefaultBuild) ------
+
+--- CommandFile 1 ---
+DefaultBuild\Flash_Boot_Code_Loader_R5F10MMGD.clnk :
+-Input=DefaultBuild\Flash_Protocol.obj
+-Input=DefaultBuild\cstart.obj
+-LIBrary="Self Programming Library\fsl.lib"
+-SECURITY_ID=00000000000000000000
+-DEVICE=C:\Program Files\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10MMG.DVF
+-DEBug
+-NOCOmpress
+-NOOPtimize
+-OUtput=DefaultBuild\Flash_Boot_Code_Loader_R5F10MMGD.abs
+-LIBrary=C:\Program Files\Renesas Electronics\CS+\CC\CC-RL\V1.03.00\lib\rl78em4s.lib
+-LIBrary=C:\Program Files\Renesas Electronics\CS+\CC\CC-RL\V1.03.00\lib\malloc_n.lib
+-LIBrary=C:\Program Files\Renesas Electronics\CS+\CC\CC-RL\V1.03.00\lib\rl78em4r.lib
+-OCDBG=84
+-DEBUG_MONITOR=1FE00-1FFFF
+-USER_OPT_BYTE=7CFFA3
+-LISt=DefaultBuild\Flash_Boot_Code_Loader_R5F10MMGD.map
+-SHow=SYmbol,Reference,Xreference,Total_size,VECTOR,STRUCT
+-AUTO_SECTION_LAYOUT
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-Message
+-MSg_unused
+-Total_size
+-NOLOgo
+-end
+-Input=DefaultBuild\Flash_Boot_Code_Loader_R5F10MMGD.abs
+-OUtput=DefaultBuild\Flash_Boot_Code_Loader_R5F10MMGD.bin
+-FOrm=Binary
+-Message
+-exit
+
+
+
+--- System Information ---
+*OS Version
+ Microsoft Windows 10 Pro (-, 10.0.14393, x86)
+*Language
+ English (United States)
+*.NET Framework Version
+ Microsoft .NET Framework 4 [.NET 4.6 / .NET 4.6.1] (4.0.30319.42000)
+
+--- Application Information ---
+*Product Name
+ CS+ for CC
+*Package Version
+ V4.01.00  [05 Sep 2016]
+*Version
+ V6.01.00.09 [01 Sep 2016]
+*Assembly Version
+ 3.12.10.1
+*Sales Area
+ Japan
+*Product License
+ RL78 License Pack 1 Standard (CC-RL); 
+*Execution Place
+ C:\Program Files\Renesas Electronics\CS+\CC
+*Memory Usage
+ *Private Working Set
+  131 MB
+ *Number of GDI Objects
+  1427
+ *Number of USER Objects
+  669
+ *Opened Files
+  1 editors, 1 files, 17 KB
+
+--- Build Tool Plug-in Information ---
+RH850 Build tool CC-RH Plug-in
+ *Version
+  V1.06.00.01 [01 Aug 2016]
+ *Assembly Version
+  1.1.10.12
+ *DLL File Name
+  BuildToolCCRH.dll
+RL78 Build tool CC-RL Plug-in
+ *Version
+  V1.03.00.00 [29 Jun 2016]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  BuildToolCCRL.dll
+RX Build tool CC-RX Plug-in
+ *Version
+  V2.06.00.00 [29 Jun 2016]
+ *Assembly Version
+  3.12.10.1
+ *DLL File Name
+  BuildToolCCRX.dll
+RH850 Build tool GHS CCRH850 Plug-in
+ *Version
+  V1.00.00.05 [29 Aug 2016]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  BuildToolGHSCCRH850.dll
+
+--- Debug Tool Plug-in Information ---
+Debugger Collection Plug-in
+ *Version
+  V4.01.00.04 [05 Aug 2016]
+ *Assembly Version
+  2.12.10.1
+ *DLL File Name
+  DebugToolCollection.dll
+
+--- Other Plug-in Information ---
+Code Generator Plug-in for RH850(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+Code Generator Plug-in(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+Code Generator/PinView Plug-in(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+Debug Console Plug-in
+ *Version
+  V3.00.00.13 [01 Aug 2014]
+ *Assembly Version
+  3.0.0.0
+ *DLL File Name
+  DebugConsole.dll
+Quick and Effective tool solution - QE(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+Pin Configurator Plug-in(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+Program Analyzer Plug-in(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+IronPython Console Plug-in(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+Editor plug-in DLL
+ *Version
+  V1.10.00.01 [30 Jun 2016]
+ *Assembly Version
+  1.1.0.0
+ *DLL File Name
+  SEditor.dll
+Stack Usage Tracer(-)
+ *Version
+  -
+ *Assembly Version
+  -
+ *DLL File Name
+  -
+Update Manager Plug-in
+ *Version
+  V2.02.00.05 [17 Jul 2014]
+ *Assembly Version
+  1.13.6.20
+ *DLL File Name
+  Update.dll
+
+Debug Tool Common Interface
+ *Version
+  V4.01.00.03 [20 Jul 2016]
+ *Assembly Version
+  3.12.10.1
+ *DLL File Name
+  CommonDebuggerInterface.dll
+Device Information Common Interface
+ *Version
+  V6.01.00.03 [29 Aug 2016]
+ *Assembly Version
+  3.0.0.0
+ *DLL File Name
+  DeviceInformation.dll
+
+--- Main Project Information ---
+D:\Devlopment\Flash_Boot_Code_Loader\R5F10MMGD\Flash_Boot_Code_Loader_R5F10MMGD.mtpj
+Microcontroller Information
+ *R5F10MMG
+  *File Name: Version
+   RL78_Productlist.xml: V4.000002
+   R5F10MMG_common.xml: V1.10.00.XX.00
+   DR5F10MMG.DVF: V1.02
+   -: -
+   -: -
+  
+
+Build Tool Information
+ *CC-RL
+   * Version of plug-in(*.dll)
+     V1.05.00.04 [22 Aug 2016]
+   * The Version of the Compiler Package
+     V1.03.00
+  
+
+Debug Tool Information
+ *RL78 E1(Serial)
+  Device V4.01.00.04 [05 Aug 2016]
+  DeviceRl78 V4.01.00.03 [20 Jul 2016]
+  ConfigurationRl78Emulator V4.01.00.04 [05 Aug 2016]
+  EngineManager V4.01.00.04 [05 Aug 2016]
+  EngineManagerExec V4.01.00.03 [20 Jul 2016]
+  RL78 Asm/Disasm V4.01.00.03 [20 Jul 2016]
+  DBEvaluatorManager V4.01.00.03 [20 Jul 2016]
+  LoadModuleManager V4.01.00.03 [20 Jul 2016]
+  
+
+Other Tool Information
+ *None
+
+

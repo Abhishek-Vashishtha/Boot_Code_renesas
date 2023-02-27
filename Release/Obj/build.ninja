@@ -1,0 +1,93 @@
+#Generating source browse information for project GDEV72
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build r_cg_adc.pbi : index r_cg_adc.xcl
+build r_cg_adc_user.pbi : index r_cg_adc_user.xcl
+build r_cg_cgc.pbi : index r_cg_cgc.xcl
+build r_cg_cgc_user.pbi : index r_cg_cgc_user.xcl
+build r_cg_dsadc.pbi : index r_cg_dsadc.xcl
+build r_cg_dsadc_user.pbi : index r_cg_dsadc_user.xcl
+build r_cg_dtc.pbi : index r_cg_dtc.xcl
+build r_cg_elc.pbi : index r_cg_elc.xcl
+build r_cg_fmc.pbi : index r_cg_fmc.xcl
+build r_cg_fmc_user.pbi : index r_cg_fmc_user.xcl
+build r_cg_hofc.pbi : index r_cg_hofc.xcl
+build r_cg_hofc_user.pbi : index r_cg_hofc_user.xcl
+build r_cg_intp.pbi : index r_cg_intp.xcl
+build r_cg_intp_user.pbi : index r_cg_intp_user.xcl
+build r_cg_it8bit.pbi : index r_cg_it8bit.xcl
+build r_cg_lcd.pbi : index r_cg_lcd.xcl
+build r_cg_lvd.pbi : index r_cg_lvd.xcl
+build r_cg_lvd_user.pbi : index r_cg_lvd_user.xcl
+build r_cg_mac32bit.pbi : index r_cg_mac32bit.xcl
+build r_cg_osdc.pbi : index r_cg_osdc.xcl
+build r_cg_rtc.pbi : index r_cg_rtc.xcl
+build r_cg_rtc_user.pbi : index r_cg_rtc_user.xcl
+build r_cg_sau.pbi : index r_cg_sau.xcl
+build r_cg_sau_user.pbi : index r_cg_sau_user.xcl
+build r_cg_systeminit.pbi : index r_cg_systeminit.xcl
+build r_cg_tau.pbi : index r_cg_tau.xcl
+build r_cg_tau_user.pbi : index r_cg_tau_user.xcl
+build r_cg_wdt.pbi : index r_cg_wdt.xcl
+build r_cg_wdt_user.pbi : index r_cg_wdt_user.xcl
+build math_lib.pbi : index math_lib.xcl
+build AES.pbi : index AES.xcl
+build app_load_survey.pbi : index app_load_survey.xcl
+build app_max_demand.pbi : index app_max_demand.xcl
+build application.pbi : index application.xcl
+build calibration.pbi : index calibration.xcl
+build clock.pbi : index clock.xcl
+build common_function.pbi : index common_function.xcl
+build cosem.pbi : index cosem.xcl
+build crc.pbi : index crc.xcl
+build debug.pbi : index debug.xcl
+build dlms.pbi : index dlms.xcl
+build dsadc.pbi : index dsadc.xcl
+build eprom_i2c.pbi : index eprom_i2c.xcl
+build hdlc.pbi : index hdlc.xcl
+build lcd.pbi : index lcd.xcl
+build main.pbi : index main.xcl
+build memory_log.pbi : index memory_log.xcl
+build metrology.pbi : index metrology.xcl
+build pcb.pbi : index pcb.xcl
+build production.pbi : index production.xcl
+build rtc.pbi : index rtc.xcl
+build self_test.pbi : index self_test.xcl
+build sleep.pbi : index sleep.xcl
+build system.pbi : index system.xcl
+build tamper.pbi : index tamper.xcl
+build timer.pbi : index timer.xcl
+build tlv493d.pbi : index tlv493d.xcl
+build tou.pbi : index tou.xcl
+build wdt.pbi : index wdt.xcl
+build GDEV72_part0.pbi : link r_cg_adc.pbi r_cg_adc_user.pbi r_cg_cgc.pbi r_cg_cgc_user.pbi r_cg_dsadc.pbi r_cg_dsadc_user.pbi r_cg_dtc.pbi r_cg_elc.pbi
+build GDEV72_part1.pbi : link r_cg_fmc.pbi r_cg_fmc_user.pbi r_cg_hofc.pbi r_cg_hofc_user.pbi r_cg_intp.pbi r_cg_intp_user.pbi r_cg_it8bit.pbi r_cg_lcd.pbi
+build GDEV72_part2.pbi : link r_cg_lvd.pbi r_cg_lvd_user.pbi r_cg_mac32bit.pbi r_cg_osdc.pbi r_cg_rtc.pbi r_cg_rtc_user.pbi r_cg_sau.pbi r_cg_sau_user.pbi
+build GDEV72_part3.pbi : link r_cg_systeminit.pbi r_cg_tau.pbi r_cg_tau_user.pbi r_cg_wdt.pbi r_cg_wdt_user.pbi math_lib.pbi AES.pbi app_load_survey.pbi
+build GDEV72_part4.pbi : link app_max_demand.pbi application.pbi calibration.pbi clock.pbi common_function.pbi cosem.pbi crc.pbi debug.pbi
+build GDEV72_part5.pbi : link dlms.pbi dsadc.pbi eprom_i2c.pbi hdlc.pbi lcd.pbi main.pbi memory_log.pbi metrology.pbi
+build GDEV72_part6.pbi : link pcb.pbi production.pbi rtc.pbi self_test.pbi sleep.pbi system.pbi tamper.pbi timer.pbi
+build GDEV72_part7.pbi : link tlv493d.pbi tou.pbi wdt.pbi
+build GDEV72.pbd : link GDEV72_part0.pbi GDEV72_part1.pbi GDEV72_part2.pbi GDEV72_part3.pbi GDEV72_part4.pbi GDEV72_part5.pbi GDEV72_part6.pbi GDEV72_part7.pbi
+build GDEV72.pbw : browsedata GDEV72.pbd
+
+

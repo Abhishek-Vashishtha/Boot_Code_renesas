@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<settings>
+    <Stack>
+        <FillEnabled>0</FillEnabled>
+        <OverflowWarningsEnabled>1</OverflowWarningsEnabled>
+        <WarningThreshold>90</WarningThreshold>
+        <SpWarningsEnabled>1</SpWarningsEnabled>
+        <WarnLogOnly>1</WarnLogOnly>
+        <UseTrigger>1</UseTrigger>
+        <TriggerName>main</TriggerName>
+        <LimitSize>0</LimitSize>
+        <ByteLimit>50</ByteLimit>
+    </Stack>
+    <Start_Stop>
+        <StartEnabled>0</StartEnabled>
+        <StartSymbol />
+        <StopEnabled>0</StopEnabled>
+        <StopSymbol />
+    </Start_Stop>
+    <E2Lite>
+        <Map0>0,0,262143,262144</Map0>
+        <Map1>1,1031936,1048319,16384</Map1>
+        <MapEntries>2</MapEntries>
+        <HWsettings>3,0,1,2,4,0,1,0,16,1,0</HWsettings>
+        <HWsettingsCube>2,4294967295,2,4294967295,0,1,0,0,0</HWsettingsCube>
+        <HWsettingsRsuid>00000000000000000000</HWsettingsRsuid>
+        <EventEntries>0</EventEntries>
+        <SeqName0 />
+        <SeqData0>0,0</SeqData0>
+        <SeqEnable10>0,0,0,0,0,0,0,0,0,0</SeqEnable10>
+        <SeqEnable20>0,0,0,0,0,0,0,0,0,0</SeqEnable20>
+        <SeqEnable30>0,0,0,0,0,0,0,0,0,0</SeqEnable30>
+        <SeqEnable40>0,0,0,0,0,0,0,0,0,0</SeqEnable40>
+        <SeqDisable0>0,0,0,0,0,0,0,0,0,0</SeqDisable0>
+        <SeqData20>0,0,0,0,0,0</SeqData20>
+        <SeqName1 />
+        <SeqData1>0,0</SeqData1>
+        <SeqEnable11>0,0,0,0,0,0,0,0,0,0</SeqEnable11>
+        <SeqEnable21>0,0,0,0,0,0,0,0,0,0</SeqEnable21>
+        <SeqEnable31>0,0,0,0,0,0,0,0,0,0</SeqEnable31>
+        <SeqEnable41>0,0,0,0,0,0,0,0,0,0</SeqEnable41>
+        <SeqDisable1>0,0,0,0,0,0,0,0,0,0</SeqDisable1>
+        <SeqData21>0,0,0,0,0,0</SeqData21>
+        <SeqName2 />
+        <SeqData2>0,0</SeqData2>
+        <SeqEnable12>0,0,0,0,0,0,0,0,0,0</SeqEnable12>
+        <SeqEnable22>0,0,0,0,0,0,0,0,0,0</SeqEnable22>
+        <SeqEnable32>0,0,0,0,0,0,0,0,0,0</SeqEnable32>
+        <SeqEnable42>0,0,0,0,0,0,0,0,0,0</SeqEnable42>
+        <SeqDisable2>0,0,0,0,0,0,0,0,0,0</SeqDisable2>
+        <SeqData22>0,0,0,0,0,0</SeqData22>
+        <SeqName3 />
+        <SeqData3>0,0</SeqData3>
+        <SeqEnable13>0,0,0,0,0,0,0,0,0,0</SeqEnable13>
+        <SeqEnable23>0,0,0,0,0,0,0,0,0,0</SeqEnable23>
+        <SeqEnable33>0,0,0,0,0,0,0,0,0,0</SeqEnable33>
+        <SeqEnable43>0,0,0,0,0,0,0,0,0,0</SeqEnable43>
+        <SeqDisable3>0,0,0,0,0,0,0,0,0,0</SeqDisable3>
+        <SeqData23>0,0,0,0,0,0</SeqData23>
+        <SeqName4 />
+        <SeqData4>0,0</SeqData4>
+        <SeqEnable14>0,0,0,0,0,0,0,0,0,0</SeqEnable14>
+        <SeqEnable24>0,0,0,0,0,0,0,0,0,0</SeqEnable24>
+        <SeqEnable34>0,0,0,0,0,0,0,0,0,0</SeqEnable34>
+        <SeqEnable44>0,0,0,0,0,0,0,0,0,0</SeqEnable44>
+        <SeqDisable4>0,0,0,0,0,0,0,0,0,0</SeqDisable4>
+        <SeqData24>0,0,0,0,0,0</SeqData24>
+        <TraceSettings>128,0,0,0,0,0,8192</TraceSettings>
+        <TimerSettings>0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</TimerSettings>
+        <Version>1,trace.txt</Version>
+        <LastDevFile>DR5F10NPJ.DVF</LastDevFile>
+        <EmulType>512</EmulType>
+        <BreakToggle>0</BreakToggle>
+        <EventLimits>0,2,2,0,0,0,2</EventLimits>
+        <LastSetupFailed>0</LastSetupFailed>
+        <OperatingFrequency>8.000000</OperatingFrequency>
+    </E2Lite>
+    <DebugChecksum>
+        <Checksum>789476581</Checksum>
+    </DebugChecksum>
+    <CallStack>
+        <ShowArgs>0</ShowArgs>
+    </CallStack>
+    <Disassembly>
+        <InstrCount>0</InstrCount>
+        <MixedMode>1</MixedMode>
+    </Disassembly>
+    <CodeCoverage>
+        <Enabled>1</Enabled>
+        <ShowSource>0</ShowSource>
+        <HideCovered>0</HideCovered>
+    </CodeCoverage>
+    <InterruptLog>
+        <LogEnabled>0</LogEnabled>
+        <GraphEnabled>0</GraphEnabled>
+        <ShowTimeLog>1</ShowTimeLog>
+        <SumEnabled>0</SumEnabled>
+        <ShowTimeSum>1</ShowTimeSum>
+        <SumSortOrder>0</SumSortOrder>
+    </InterruptLog>
+    <DataLog>
+        <LogEnabled>0</LogEnabled>
+        <GraphEnabled>0</GraphEnabled>
+        <ShowTimeLog>1</ShowTimeLog>
+        <SumEnabled>0</SumEnabled>
+        <ShowTimeSum>1</ShowTimeSum>
+    </DataLog>
+    <Breakpoints2>
+        <Count>0</Count>
+    </Breakpoints2>
+    <Interrupts>
+        <Enabled>1</Enabled>
+    </Interrupts>
+    <MemoryMap>
+        <Enabled>0</Enabled>
+        <Base>0</Base>
+        <UseAuto>0</UseAuto>
+        <TypeViolation>1</TypeViolation>
+        <UnspecRange>1</UnspecRange>
+        <ActionState>1</ActionState>
+    </MemoryMap>
+    <DriverProfiling>
+        <Enabled>0</Enabled>
+        <Mode>1</Mode>
+        <Graph>0</Graph>
+        <Symbiont>0</Symbiont>
+    </DriverProfiling>
+    <Trace1>
+        <Enabled>0</Enabled>
+        <ShowSource>1</ShowSource>
+    </Trace1>
+    <CallStackLog>
+        <Enabled>0</Enabled>
+    </CallStackLog>
+    <CallStackStripe>
+        <ShowTiming>1</ShowTiming>
+    </CallStackStripe>
+    <Simulator>
+        <Freq>10000000</Freq>
+        <FreqHi>0</FreqHi>
+    </Simulator>
+    <array_types>
+        <Fmt0>int16_t (volatile)[8]	3	0</Fmt0>
+        <Fmt1>us8 (const)[12]	3	0</Fmt1>
+        <Fmt2>us8[128]	3	0</Fmt2>
+        <Fmt3>us8[4]	3	0</Fmt3>
+    </array_types>
+    <watch_formats>
+        <Fmt0>{W}1:*buffer_ptr	3	0</Fmt0>
+        <Fmt1>{W}1:DTCEN1	1	0</Fmt1>
+        <Fmt2>{W}1:P0	1	0</Fmt2>
+        <Fmt3>{W}1:P0 &amp; 0x20	4	0</Fmt3>
+        <Fmt4>{W}1:P0 &amp; 0x40	4	0</Fmt4>
+        <Fmt5>{W}1:P3	1	0</Fmt5>
+        <Fmt6>{W}1:P5	1	0</Fmt6>
+        <Fmt7>{W}1:PC	4	0</Fmt7>
+        <Fmt8>{W}1:PFSEG3	1	0</Fmt8>
+        <Fmt9>{W}1:PM3	1	0</Fmt9>
+        <Fmt10>{W}1:RCR2	1	0</Fmt10>
+        <Fmt11>{W}1:SP	4	0</Fmt11>
+        <Fmt12>{W}1:WriteBlock1	4	0</Fmt12>
+        <Fmt13>{W}1:adc_data[1]&gt;&gt;6	1	0</Fmt13>
+        <Fmt14>{W}1:adc_data[2]&gt;&gt;6	1	0</Fmt14>
+        <Fmt15>{W}1:address	4	0</Fmt15>
+        <Fmt16>{W}1:battery_voltage	3	0</Fmt16>
+        <Fmt17>{W}1:dtc_controldata_1.dtdar	4	0</Fmt17>
+        <Fmt18>{W}1:hard_reset_f	3	0</Fmt18>
+        <Fmt19>{W}1:last_interrupt	3	0</Fmt19>
+        <Fmt20>{W}1:ls_address	4	0</Fmt20>
+        <Fmt21>{W}1:ls_pg1_address	4	0</Fmt21>
+        <Fmt22>{W}1:push_count_down	3	0</Fmt22>
+        <Fmt23>{W}1:push_count_up	3	0</Fmt23>
+        <Fmt24>{W}1:sample_delay	3	0</Fmt24>
+        <Fmt25>{W}1:system_reset_byte	1	0</Fmt25>
+        <Fmt26>{W}1:tamper_event_status	4	0</Fmt26>
+        <Fmt27>{W}1:tamper_instant_status	4	0</Fmt27>
+        <Fmt28>{W}1:tlv.Bnet_rms_acc	4	0</Fmt28>
+        <Fmt29>{W}1:tlv.avg_sample_counter	3	0</Fmt29>
+        <Fmt30>{W}1:tlv.fault_detect_count	3	0</Fmt30>
+        <Fmt31>{W}1:tlv.tlv_init_cntr	3	0</Fmt31>
+        <Fmt32>{W}1:tlv_init_cntr	3	0</Fmt32>
+    </watch_formats>
+    <DataSample>
+        <LogEnabled>0</LogEnabled>
+        <GraphEnabled>0</GraphEnabled>
+        <ShowTimeLog>1</ShowTimeLog>
+    </DataSample>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+        <Category>_ 0</Category>
+    </LogFile>
+    <TraceHelper>
+        <Enabled>0</Enabled>
+        <ShowSource>1</ShowSource>
+    </TraceHelper>
+    <Breakpoints>
+        <Bp0>_ "STD_CODE" "{$PROJ_DIR$\source_code\source_files\rtc.c}.1.2" 0 0 0 0 "" 0 ""</Bp0>
+        <Bp1>_ "STD_CODE" "{$PROJ_DIR$\source_code\source_files\lcd.c}.66.13" 0 0 0 0 "" 0 ""</Bp1>
+        <Bp2>_ "STD_CODE" "{$PROJ_DIR$\source_code\source_files\lcd.c}.79.5" 0 0 0 0 "" 0 ""</Bp2>
+        <Bp3>_ "STD_CODE" "{$PROJ_DIR$\source_code\source_files\sleep.c}.24.1" 0 0 0 0 "" 0 ""</Bp3>
+        <Bp4>_ "STD_CODE" "{$PROJ_DIR$\source_code\source_files\tamper.c}.1682.9" 0 0 0 0 "" 0 ""</Bp4>
+        <Bp5>_ "STD_CODE" "{$PROJ_DIR$\source_code\source_files\tamper.c}.1646.5" 0 0 0 0 "" 0 ""</Bp5>
+        <Bp6>_ "STD_CODE" "{$PROJ_DIR$\source_code\source_files\timer.c}.0.1" 0 0 0 0 "" 0 ""</Bp6>
+        <Bp7>_ "STD_CODE" "{$PROJ_DIR$\source_code\source_files\THD.c}.223.17" 0 0 0 0 "" 0 ""</Bp7>
+        <Bp8>_ "STD_CODE" "{$PROJ_DIR$\source_code\source_files\cosem.c}.1893.3" 0 0 0 0 "" 0 ""</Bp8>
+        <Bp9>_ "STD_CODE" "{$PROJ_DIR$\source_code\driver_files\r_cg_lvd_user.c}.71.5" 1 0 0 0 "" 0 ""</Bp9>
+        <Bp10>_ "STD_CODE" "{$PROJ_DIR$\source_code\driver_files\r_cg_lvd_user.c}.95.5" 1 0 0 0 "" 0 ""</Bp10>
+        <Bp11>_ "STD_CODE" "{$PROJ_DIR$\source_code\driver_files\r_cg_lvd_user.c}.117.5" 1 0 0 0 "" 0 ""</Bp11>
+        <Bp12>_ "STD_CODE" "{$PROJ_DIR$\source_code\driver_files\r_cg_lvd_user.c}.140.5" 1 0 0 0 "" 0 ""</Bp12>
+        <Bp13>_ "STD_CODE" "{$PROJ_DIR$\source_code\driver_files\r_cg_lvd_user.c}.163.5" 1 0 0 0 "" 0 ""</Bp13>
+        <Bp14>_ "STD_CODE" "{$PROJ_DIR$\source_code\driver_files\r_cg_sau_user.c}.69.3" 1 0 0 0 "" 0 ""</Bp14>
+        <Bp15>_ "STD_CODE" "{$PROJ_DIR$\source_code\driver_files\r_cg_sau_user.c}.163.3" 1 0 0 0 "" 0 ""</Bp15>
+        <Bp16>_ "STD_CODE" "{$PROJ_DIR$\source_code\source_files\Flash_Protocol.c}.295.5" 1 0 0 0 "" 0 ""</Bp16>
+        <Count>17</Count>
+    </Breakpoints>
+    <Monitor_Execution>
+        <Leave_target_running>0</Leave_target_running>
+    </Monitor_Execution>
+    <Aliases>
+        <Count>0</Count>
+        <SuppressDialog>0</SuppressDialog>
+    </Aliases>
+</settings>

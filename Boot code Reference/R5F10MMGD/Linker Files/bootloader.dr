@@ -1,0 +1,15 @@
+MEMORY ROM   : ( 000000H , 001000H )                    ; Boot clusters 4K
+MEMORY U_ROM : ( 002000H , 01DC00H )                    ; User program 55+K
+
+;MEMORY OCDROM :(00FF00H, 000100H)			; 256 Bytes
+
+MERGE FSL_FCD  : = ROM
+MERGE FSL_BCD  : = ROM
+MERGE text : = ROM
+
+;MERGE @@CNST := ROM
+
+;MEMORY RAM_SADDR : ( 0FFE20H , 000DFH )                 ; RAM (saddr)
+;MEMORY STK :(0FFC1EH,0200H)                             ; stack end edress + size
+;MEMORY RAM : (0FEB0AH , 01114H )                        ; for device RAM size 4+KB
+;MEMORY SELFRAM : ( 0FE700H , 00040AH )                  ; 1K
